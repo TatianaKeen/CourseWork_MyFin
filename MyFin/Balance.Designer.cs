@@ -1,6 +1,6 @@
 ﻿namespace MyFin
 {
-    partial class Costs_category
+    partial class Balance
     {
         /// <summary>
         /// Required designer variable.
@@ -30,16 +30,16 @@
         {
             this.SuspendLayout();
             // 
-            // Costs_category
+            // Balance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 361);
-            this.Name = "Costs_category";
+            this.Name = "Balance";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Категории расходов";
+            this.Text = "Balance";
             this.ResumeLayout(false);
 
         }

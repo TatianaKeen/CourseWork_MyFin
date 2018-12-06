@@ -66,6 +66,8 @@
             this.menuDirectoryCostsCategory = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.menuThemes = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuDayTheme = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuNightTheme = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.menuToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAboutUs = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,11 +76,9 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnAll = new System.Windows.Forms.ToolStripButton();
             this.btnDay = new System.Windows.Forms.ToolStripButton();
-            this.btnMonth = new System.Windows.Forms.ToolStripButton();
             this.btnWeek = new System.Windows.Forms.ToolStripButton();
+            this.btnMonth = new System.Windows.Forms.ToolStripButton();
             this.btnYear = new System.Windows.Forms.ToolStripButton();
-            this.светлаяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.темнаяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             this.toolBar.SuspendLayout();
             this.SuspendLayout();
@@ -93,7 +93,7 @@
             this.menuAboutUs});
             this.mainMenu.Location = new System.Drawing.Point(0, 0);
             this.mainMenu.Name = "mainMenu";
-            this.mainMenu.Size = new System.Drawing.Size(584, 24);
+            this.mainMenu.Size = new System.Drawing.Size(684, 24);
             this.mainMenu.TabIndex = 0;
             this.mainMenu.Text = "menuStrip1";
             // 
@@ -123,31 +123,31 @@
             // menuIncomeAll
             // 
             this.menuIncomeAll.Name = "menuIncomeAll";
-            this.menuIncomeAll.Size = new System.Drawing.Size(180, 22);
+            this.menuIncomeAll.Size = new System.Drawing.Size(145, 22);
             this.menuIncomeAll.Text = "За всё время";
             // 
             // menuIncomeDay
             // 
             this.menuIncomeDay.Name = "menuIncomeDay";
-            this.menuIncomeDay.Size = new System.Drawing.Size(180, 22);
+            this.menuIncomeDay.Size = new System.Drawing.Size(145, 22);
             this.menuIncomeDay.Text = "За день";
             // 
             // menuIncomeWeek
             // 
             this.menuIncomeWeek.Name = "menuIncomeWeek";
-            this.menuIncomeWeek.Size = new System.Drawing.Size(180, 22);
+            this.menuIncomeWeek.Size = new System.Drawing.Size(145, 22);
             this.menuIncomeWeek.Text = "За неделю";
             // 
             // menuIncomeMonth
             // 
             this.menuIncomeMonth.Name = "menuIncomeMonth";
-            this.menuIncomeMonth.Size = new System.Drawing.Size(180, 22);
+            this.menuIncomeMonth.Size = new System.Drawing.Size(145, 22);
             this.menuIncomeMonth.Text = "За месяц";
             // 
             // menuIncomeYear
             // 
             this.menuIncomeYear.Name = "menuIncomeYear";
-            this.menuIncomeYear.Size = new System.Drawing.Size(180, 22);
+            this.menuIncomeYear.Size = new System.Drawing.Size(145, 22);
             this.menuIncomeYear.Text = "За год";
             // 
             // Costs
@@ -165,31 +165,31 @@
             // menuCostsAll
             // 
             this.menuCostsAll.Name = "menuCostsAll";
-            this.menuCostsAll.Size = new System.Drawing.Size(180, 22);
+            this.menuCostsAll.Size = new System.Drawing.Size(145, 22);
             this.menuCostsAll.Text = "За всё время";
             // 
             // menuCostsDay
             // 
             this.menuCostsDay.Name = "menuCostsDay";
-            this.menuCostsDay.Size = new System.Drawing.Size(180, 22);
+            this.menuCostsDay.Size = new System.Drawing.Size(145, 22);
             this.menuCostsDay.Text = "За день";
             // 
             // menuCostsWeek
             // 
             this.menuCostsWeek.Name = "menuCostsWeek";
-            this.menuCostsWeek.Size = new System.Drawing.Size(180, 22);
+            this.menuCostsWeek.Size = new System.Drawing.Size(145, 22);
             this.menuCostsWeek.Text = "За неделю";
             // 
             // menuCostsMonth
             // 
             this.menuCostsMonth.Name = "menuCostsMonth";
-            this.menuCostsMonth.Size = new System.Drawing.Size(180, 22);
+            this.menuCostsMonth.Size = new System.Drawing.Size(145, 22);
             this.menuCostsMonth.Text = "За месяц";
             // 
             // menuCostsYear
             // 
             this.menuCostsYear.Name = "menuCostsYear";
-            this.menuCostsYear.Size = new System.Drawing.Size(180, 22);
+            this.menuCostsYear.Size = new System.Drawing.Size(145, 22);
             this.menuCostsYear.Text = "За год";
             // 
             // toolStripMenuItem1
@@ -202,6 +202,7 @@
             this.Balanсe.Name = "Balanсe";
             this.Balanсe.Size = new System.Drawing.Size(180, 22);
             this.Balanсe.Text = "Баланс";
+            this.Balanсe.Click += new System.EventHandler(this.Balanсe_Click);
             // 
             // menuReports
             // 
@@ -221,37 +222,37 @@
             this.menuReportIncomeMonth,
             this.menuReportIncomeYear});
             this.доходыToolStripMenuItem1.Name = "доходыToolStripMenuItem1";
-            this.доходыToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.доходыToolStripMenuItem1.Size = new System.Drawing.Size(120, 22);
             this.доходыToolStripMenuItem1.Text = "Доходы";
             // 
             // menuReportIncomeAll
             // 
             this.menuReportIncomeAll.Name = "menuReportIncomeAll";
-            this.menuReportIncomeAll.Size = new System.Drawing.Size(180, 22);
+            this.menuReportIncomeAll.Size = new System.Drawing.Size(145, 22);
             this.menuReportIncomeAll.Text = "За всё время";
             // 
             // menuReportIncomeDay
             // 
             this.menuReportIncomeDay.Name = "menuReportIncomeDay";
-            this.menuReportIncomeDay.Size = new System.Drawing.Size(180, 22);
+            this.menuReportIncomeDay.Size = new System.Drawing.Size(145, 22);
             this.menuReportIncomeDay.Text = "За день";
             // 
             // menuReportIncomeWeek
             // 
             this.menuReportIncomeWeek.Name = "menuReportIncomeWeek";
-            this.menuReportIncomeWeek.Size = new System.Drawing.Size(180, 22);
+            this.menuReportIncomeWeek.Size = new System.Drawing.Size(145, 22);
             this.menuReportIncomeWeek.Text = "За неделю";
             // 
             // menuReportIncomeMonth
             // 
             this.menuReportIncomeMonth.Name = "menuReportIncomeMonth";
-            this.menuReportIncomeMonth.Size = new System.Drawing.Size(180, 22);
+            this.menuReportIncomeMonth.Size = new System.Drawing.Size(145, 22);
             this.menuReportIncomeMonth.Text = "За месяц";
             // 
             // menuReportIncomeYear
             // 
             this.menuReportIncomeYear.Name = "menuReportIncomeYear";
-            this.menuReportIncomeYear.Size = new System.Drawing.Size(180, 22);
+            this.menuReportIncomeYear.Size = new System.Drawing.Size(145, 22);
             this.menuReportIncomeYear.Text = "За год";
             // 
             // расходыToolStripMenuItem1
@@ -263,37 +264,37 @@
             this.menuReportCostsMonth,
             this.menuReportCostsYear});
             this.расходыToolStripMenuItem1.Name = "расходыToolStripMenuItem1";
-            this.расходыToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.расходыToolStripMenuItem1.Size = new System.Drawing.Size(120, 22);
             this.расходыToolStripMenuItem1.Text = "Расходы";
             // 
             // menuReportCostsAll
             // 
             this.menuReportCostsAll.Name = "menuReportCostsAll";
-            this.menuReportCostsAll.Size = new System.Drawing.Size(180, 22);
+            this.menuReportCostsAll.Size = new System.Drawing.Size(145, 22);
             this.menuReportCostsAll.Text = "За всё время";
             // 
             // menuReportCostsDay
             // 
             this.menuReportCostsDay.Name = "menuReportCostsDay";
-            this.menuReportCostsDay.Size = new System.Drawing.Size(180, 22);
+            this.menuReportCostsDay.Size = new System.Drawing.Size(145, 22);
             this.menuReportCostsDay.Text = "За день";
             // 
             // menuReportCostsWeek
             // 
             this.menuReportCostsWeek.Name = "menuReportCostsWeek";
-            this.menuReportCostsWeek.Size = new System.Drawing.Size(180, 22);
+            this.menuReportCostsWeek.Size = new System.Drawing.Size(145, 22);
             this.menuReportCostsWeek.Text = "За неделю";
             // 
             // menuReportCostsMonth
             // 
             this.menuReportCostsMonth.Name = "menuReportCostsMonth";
-            this.menuReportCostsMonth.Size = new System.Drawing.Size(180, 22);
+            this.menuReportCostsMonth.Size = new System.Drawing.Size(145, 22);
             this.menuReportCostsMonth.Text = "За месяц";
             // 
             // menuReportCostsYear
             // 
             this.menuReportCostsYear.Name = "menuReportCostsYear";
-            this.menuReportCostsYear.Size = new System.Drawing.Size(180, 22);
+            this.menuReportCostsYear.Size = new System.Drawing.Size(145, 22);
             this.menuReportCostsYear.Text = "За год";
             // 
             // menuDirectory
@@ -313,30 +314,35 @@
             this.menuDirectoryUsers.Name = "menuDirectoryUsers";
             this.menuDirectoryUsers.Size = new System.Drawing.Size(184, 22);
             this.menuDirectoryUsers.Text = "Пользователи";
+            this.menuDirectoryUsers.Click += new System.EventHandler(this.menuDirectoryUsers_Click);
             // 
             // menuDirectoryIncome
             // 
             this.menuDirectoryIncome.Name = "menuDirectoryIncome";
             this.menuDirectoryIncome.Size = new System.Drawing.Size(184, 22);
             this.menuDirectoryIncome.Text = "Доходы";
+            this.menuDirectoryIncome.Click += new System.EventHandler(this.menuDirectoryIncome_Click);
             // 
             // menuDirectoryIncomeCategory
             // 
             this.menuDirectoryIncomeCategory.Name = "menuDirectoryIncomeCategory";
             this.menuDirectoryIncomeCategory.Size = new System.Drawing.Size(184, 22);
             this.menuDirectoryIncomeCategory.Text = "Категории доходов";
+            this.menuDirectoryIncomeCategory.Click += new System.EventHandler(this.menuDirectoryIncomeCategory_Click);
             // 
             // menuDirectoryCosts
             // 
             this.menuDirectoryCosts.Name = "menuDirectoryCosts";
             this.menuDirectoryCosts.Size = new System.Drawing.Size(184, 22);
             this.menuDirectoryCosts.Text = "Расходы";
+            this.menuDirectoryCosts.Click += new System.EventHandler(this.menuDirectoryCosts_Click);
             // 
             // menuDirectoryCostsCategory
             // 
             this.menuDirectoryCostsCategory.Name = "menuDirectoryCostsCategory";
             this.menuDirectoryCostsCategory.Size = new System.Drawing.Size(184, 22);
             this.menuDirectoryCostsCategory.Text = "Категории расходов";
+            this.menuDirectoryCostsCategory.Click += new System.EventHandler(this.menuDirectoryCostsCategory_Click);
             // 
             // menuSettings
             // 
@@ -351,11 +357,27 @@
             // menuThemes
             // 
             this.menuThemes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.светлаяToolStripMenuItem,
-            this.темнаяToolStripMenuItem});
+            this.menuDayTheme,
+            this.menuNightTheme});
             this.menuThemes.Name = "menuThemes";
             this.menuThemes.Size = new System.Drawing.Size(196, 22);
             this.menuThemes.Text = "Выбрать тему";
+            // 
+            // menuDayTheme
+            // 
+            this.menuDayTheme.Checked = true;
+            this.menuDayTheme.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.menuDayTheme.Name = "menuDayTheme";
+            this.menuDayTheme.Size = new System.Drawing.Size(180, 22);
+            this.menuDayTheme.Text = "Светлая";
+            this.menuDayTheme.Click += new System.EventHandler(this.menuDayTheme_Click);
+            // 
+            // menuNightTheme
+            // 
+            this.menuNightTheme.Name = "menuNightTheme";
+            this.menuNightTheme.Size = new System.Drawing.Size(180, 22);
+            this.menuNightTheme.Text = "Темная";
+            this.menuNightTheme.Click += new System.EventHandler(this.menuNightTheme_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -364,6 +386,8 @@
             // 
             // menuToolStrip
             // 
+            this.menuToolStrip.Checked = true;
+            this.menuToolStrip.CheckState = System.Windows.Forms.CheckState.Checked;
             this.menuToolStrip.Name = "menuToolStrip";
             this.menuToolStrip.Size = new System.Drawing.Size(196, 22);
             this.menuToolStrip.Text = "Панель инструментов";
@@ -373,6 +397,7 @@
             this.menuAboutUs.Name = "menuAboutUs";
             this.menuAboutUs.Size = new System.Drawing.Size(94, 20);
             this.menuAboutUs.Text = "О программе";
+            this.menuAboutUs.Click += new System.EventHandler(this.menuAboutUs_Click);
             // 
             // toolBar
             // 
@@ -386,7 +411,7 @@
             this.btnYear});
             this.toolBar.Location = new System.Drawing.Point(0, 24);
             this.toolBar.Name = "toolBar";
-            this.toolBar.Size = new System.Drawing.Size(584, 25);
+            this.toolBar.Size = new System.Drawing.Size(684, 25);
             this.toolBar.TabIndex = 1;
             this.toolBar.Text = "toolStrip1";
             // 
@@ -419,15 +444,6 @@
             this.btnDay.Size = new System.Drawing.Size(52, 22);
             this.btnDay.Text = "За день";
             // 
-            // btnMonth
-            // 
-            this.btnMonth.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnMonth.Image = ((System.Drawing.Image)(resources.GetObject("btnMonth.Image")));
-            this.btnMonth.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnMonth.Name = "btnMonth";
-            this.btnMonth.Size = new System.Drawing.Size(61, 22);
-            this.btnMonth.Text = "За месяц";
-            // 
             // btnWeek
             // 
             this.btnWeek.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -436,6 +452,15 @@
             this.btnWeek.Name = "btnWeek";
             this.btnWeek.Size = new System.Drawing.Size(69, 22);
             this.btnWeek.Text = "За неделю";
+            // 
+            // btnMonth
+            // 
+            this.btnMonth.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnMonth.Image = ((System.Drawing.Image)(resources.GetObject("btnMonth.Image")));
+            this.btnMonth.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnMonth.Name = "btnMonth";
+            this.btnMonth.Size = new System.Drawing.Size(61, 22);
+            this.btnMonth.Text = "За месяц";
             // 
             // btnYear
             // 
@@ -446,28 +471,18 @@
             this.btnYear.Size = new System.Drawing.Size(45, 22);
             this.btnYear.Text = "За год";
             // 
-            // светлаяToolStripMenuItem
-            // 
-            this.светлаяToolStripMenuItem.Name = "светлаяToolStripMenuItem";
-            this.светлаяToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.светлаяToolStripMenuItem.Text = "Светлая";
-            // 
-            // темнаяToolStripMenuItem
-            // 
-            this.темнаяToolStripMenuItem.Name = "темнаяToolStripMenuItem";
-            this.темнаяToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.темнаяToolStripMenuItem.Text = "Темная";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 311);
+            this.ClientSize = new System.Drawing.Size(684, 411);
             this.Controls.Add(this.toolBar);
             this.Controls.Add(this.mainMenu);
             this.MainMenuStrip = this.mainMenu;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MyFin";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.mainMenu.ResumeLayout(false);
             this.mainMenu.PerformLayout();
             this.toolBar.ResumeLayout(false);
@@ -527,8 +542,8 @@
         private System.Windows.Forms.ToolStripMenuItem menuDirectoryIncomeCategory;
         private System.Windows.Forms.ToolStripMenuItem menuDirectoryCosts;
         private System.Windows.Forms.ToolStripMenuItem menuDirectoryCostsCategory;
-        private System.Windows.Forms.ToolStripMenuItem светлаяToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem темнаяToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuDayTheme;
+        private System.Windows.Forms.ToolStripMenuItem menuNightTheme;
     }
 }
 
