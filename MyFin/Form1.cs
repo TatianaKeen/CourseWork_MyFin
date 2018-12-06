@@ -13,7 +13,7 @@ namespace MyFin
     public partial class Form1 : Form
     {
         bool night = false;
-        string tableName;
+        //string tableName;
         public Form1()
         {
             InitializeComponent();
@@ -22,7 +22,8 @@ namespace MyFin
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            menuToolBar.Checked = false;
+            toolStrip.Visible = false;
         }
 
         private void menuDirectoryUsers_Click(object sender, EventArgs e)
@@ -75,6 +76,12 @@ namespace MyFin
         private void menuNightTheme_Click(object sender, EventArgs e)
         {
             night = true;
+        }
+
+        private void menuToolBar_Click(object sender, EventArgs e)
+        {
+            menuToolBar.Checked = !menuToolBar.Checked;
+            toolStrip.Visible = !toolStrip.Visible;
         }
     }
 }

@@ -69,9 +69,9 @@
             this.menuDayTheme = new System.Windows.Forms.ToolStripMenuItem();
             this.menuNightTheme = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.menuToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuToolBar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAboutUs = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolBar = new System.Windows.Forms.ToolStrip();
+            this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.LabelToolBar = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnAll = new System.Windows.Forms.ToolStripButton();
@@ -80,7 +80,7 @@
             this.btnMonth = new System.Windows.Forms.ToolStripButton();
             this.btnYear = new System.Windows.Forms.ToolStripButton();
             this.mainMenu.SuspendLayout();
-            this.toolBar.SuspendLayout();
+            this.toolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainMenu
@@ -117,7 +117,7 @@
             this.menuIncomeMonth,
             this.menuIncomeYear});
             this.Income.Name = "Income";
-            this.Income.Size = new System.Drawing.Size(180, 22);
+            this.Income.Size = new System.Drawing.Size(120, 22);
             this.Income.Text = "Доходы";
             // 
             // menuIncomeAll
@@ -159,7 +159,7 @@
             this.menuCostsMonth,
             this.menuCostsYear});
             this.Costs.Name = "Costs";
-            this.Costs.Size = new System.Drawing.Size(180, 22);
+            this.Costs.Size = new System.Drawing.Size(120, 22);
             this.Costs.Text = "Расходы";
             // 
             // menuCostsAll
@@ -195,12 +195,12 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(117, 6);
             // 
             // Balanсe
             // 
             this.Balanсe.Name = "Balanсe";
-            this.Balanсe.Size = new System.Drawing.Size(180, 22);
+            this.Balanсe.Size = new System.Drawing.Size(120, 22);
             this.Balanсe.Text = "Баланс";
             this.Balanсe.Click += new System.EventHandler(this.Balanсe_Click);
             // 
@@ -349,7 +349,7 @@
             this.menuSettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuThemes,
             this.toolStripMenuItem2,
-            this.menuToolStrip});
+            this.menuToolBar});
             this.menuSettings.Name = "menuSettings";
             this.menuSettings.Size = new System.Drawing.Size(79, 20);
             this.menuSettings.Text = "Настройки";
@@ -368,14 +368,14 @@
             this.menuDayTheme.Checked = true;
             this.menuDayTheme.CheckState = System.Windows.Forms.CheckState.Checked;
             this.menuDayTheme.Name = "menuDayTheme";
-            this.menuDayTheme.Size = new System.Drawing.Size(180, 22);
+            this.menuDayTheme.Size = new System.Drawing.Size(118, 22);
             this.menuDayTheme.Text = "Светлая";
             this.menuDayTheme.Click += new System.EventHandler(this.menuDayTheme_Click);
             // 
             // menuNightTheme
             // 
             this.menuNightTheme.Name = "menuNightTheme";
-            this.menuNightTheme.Size = new System.Drawing.Size(180, 22);
+            this.menuNightTheme.Size = new System.Drawing.Size(118, 22);
             this.menuNightTheme.Text = "Темная";
             this.menuNightTheme.Click += new System.EventHandler(this.menuNightTheme_Click);
             // 
@@ -384,13 +384,14 @@
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(193, 6);
             // 
-            // menuToolStrip
+            // menuToolBar
             // 
-            this.menuToolStrip.Checked = true;
-            this.menuToolStrip.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.menuToolStrip.Name = "menuToolStrip";
-            this.menuToolStrip.Size = new System.Drawing.Size(196, 22);
-            this.menuToolStrip.Text = "Панель инструментов";
+            this.menuToolBar.Checked = true;
+            this.menuToolBar.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.menuToolBar.Name = "menuToolBar";
+            this.menuToolBar.Size = new System.Drawing.Size(196, 22);
+            this.menuToolBar.Text = "Панель инструментов";
+            this.menuToolBar.Click += new System.EventHandler(this.menuToolBar_Click);
             // 
             // menuAboutUs
             // 
@@ -399,9 +400,9 @@
             this.menuAboutUs.Text = "О программе";
             this.menuAboutUs.Click += new System.EventHandler(this.menuAboutUs_Click);
             // 
-            // toolBar
+            // toolStrip
             // 
-            this.toolBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.LabelToolBar,
             this.toolStripSeparator1,
             this.btnAll,
@@ -409,11 +410,11 @@
             this.btnWeek,
             this.btnMonth,
             this.btnYear});
-            this.toolBar.Location = new System.Drawing.Point(0, 24);
-            this.toolBar.Name = "toolBar";
-            this.toolBar.Size = new System.Drawing.Size(684, 25);
-            this.toolBar.TabIndex = 1;
-            this.toolBar.Text = "toolStrip1";
+            this.toolStrip.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip.Name = "toolStrip";
+            this.toolStrip.Size = new System.Drawing.Size(684, 25);
+            this.toolStrip.TabIndex = 1;
+            this.toolStrip.Text = "toolStrip1";
             // 
             // LabelToolBar
             // 
@@ -476,7 +477,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 411);
-            this.Controls.Add(this.toolBar);
+            this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.mainMenu);
             this.MainMenuStrip = this.mainMenu;
             this.Name = "Form1";
@@ -485,8 +486,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.mainMenu.ResumeLayout(false);
             this.mainMenu.PerformLayout();
-            this.toolBar.ResumeLayout(false);
-            this.toolBar.PerformLayout();
+            this.toolStrip.ResumeLayout(false);
+            this.toolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -527,9 +528,9 @@
         private System.Windows.Forms.ToolStripMenuItem menuSettings;
         private System.Windows.Forms.ToolStripMenuItem menuThemes;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem menuToolStrip;
+        private System.Windows.Forms.ToolStripMenuItem menuToolBar;
         private System.Windows.Forms.ToolStripMenuItem menuAboutUs;
-        private System.Windows.Forms.ToolStrip toolBar;
+        private System.Windows.Forms.ToolStrip toolStrip;
         private System.Windows.Forms.ToolStripLabel LabelToolBar;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton btnAll;

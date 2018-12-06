@@ -16,5 +16,10 @@ namespace MyFin
         {
             InitializeComponent();
         }
+
+        private void Balance_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
