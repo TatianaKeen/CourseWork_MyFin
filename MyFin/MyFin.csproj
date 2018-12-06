@@ -46,16 +46,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Costs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Costs.Designer.cs">
+      <DependentUpon>Costs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Costs_category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Costs_category.Designer.cs">
+      <DependentUpon>Costs_category.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Income.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Income.Designer.cs">
+      <DependentUpon>Income.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Income_category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Income_category.Designer.cs">
+      <DependentUpon>Income_category.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Costs.resx">
+      <DependentUpon>Costs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Costs_category.resx">
+      <DependentUpon>Costs_category.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Income.resx">
+      <DependentUpon>Income.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Income_category.resx">
+      <DependentUpon>Income_category.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +108,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
